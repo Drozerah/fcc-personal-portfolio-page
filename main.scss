@@ -1,5 +1,8 @@
 @import './scss/colors';
+@import './scss/responsive';
+
 $nav_height: 60px;
+
 *{
   box-sizing: border-box;
 }
@@ -7,7 +10,6 @@ html, body{
   height: 100vh;
   margin: 0;
 }
-
 h1{
   margin: 0;
 }
@@ -29,9 +31,11 @@ ul{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: $gray;
   font-size: 20px;
   height: $nav_height;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.96);
+
   h1{
     font-size: inherit;
     font-weight: normal;
@@ -45,7 +49,6 @@ ul{
   }
 }
 main{
-  background-color: $light_gray;
   margin-top: $nav_height;
   #welcome-section{
     height: 100vh;
@@ -57,12 +60,10 @@ main{
     height: 100vh;
   }
 }
-
 footer{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  background-color: $gray;
   height: 60px;
 }
