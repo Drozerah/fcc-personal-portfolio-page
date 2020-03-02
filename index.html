@@ -8,20 +8,40 @@
     <title>ffc-personal-porfolio-page</title>
 </head>
 <body>
-    <header>
+    <header id="navbar">
       <h1>Site title</h1>
-      <nav>Nav</nav>
+      <nav>
+        <ul>
+          <li><a href="#Section_1">Home</a></li>
+          <li><a href="#Section_2">Projects</a></li>
+          <li><a href="#Section_3">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <header>
-        <h1>Title</h1>
-      </header>
-      <section>
-        Section
+      <span class="anchor" id="Section_1"></span><!-- anchor -->
+      <section id="welcome-section">
+        <h1>Welcome:</h1>
+      </section>
+      <span class="anchor" id="Section_2"></span><!-- anchor -->
+      <section id="projects">
+        <h1>Projects:</h1>
+        <ul class="projects">
+          <li>
+            <div class="project-tile"><a href="#">Project link</a></div>
+          </li>
+        </ul>
+      </section>
+      <span class="anchor" id="Section_3"></span><!-- anchor -->
+      <section id="contact">
+        <h1>Contact:</h1>
+        <ul id="contact">
+          <li><a href="https://github.com/Drozerah" id="profile-link" target="_blank">GitHub</a></li>
+        </ul>
       </section>
     </main>
     <footer>
-      Footer
+      <div>Coded by <a href="https://github.com/Drozerah" id="profile-link" target="_blank">Drozerah</a> </div>
     </footer>
     <script src="app.js"></script>
 </body>

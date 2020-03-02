@@ -1,0 +1,68 @@
+@import './scss/colors';
+$nav_height: 60px;
+*{
+  box-sizing: border-box;
+}
+html, body{
+  height: 100vh;
+  margin: 0;
+}
+
+h1{
+  margin: 0;
+}
+ul{
+  margin: 0;
+}
+.anchor {
+  display: block;
+  height: $nav_height;       /* same height as header */
+  margin-top: -$nav_height;  /* same height as header */
+  visibility: hidden;
+}
+#navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: $gray;
+  font-size: 20px;
+  height: $nav_height;
+  h1{
+    font-size: inherit;
+    font-weight: normal;
+    margin-right: 20px;
+  }
+  nav{
+    font-size: inherit;
+    ul,li{
+      display: inline;
+    }
+  }
+}
+main{
+  background-color: $light_gray;
+  margin-top: $nav_height;
+  #welcome-section{
+    height: 100vh;
+  }
+  #projects{
+    height: 100vh;
+  }
+  #contact{
+    height: 100vh;
+  }
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $gray;
+  height: 60px;
+}
