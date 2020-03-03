@@ -2,15 +2,24 @@
 /*
 * MEDIA QUERIES
 */
+@import url("https://fonts.googleapis.com/css?family=Bad+Script|Raleway&display=swap");
 @media screen and (min-width: 993px) {
   main, footer {
     margin: 0 40px;
+  }
+  main #skills, footer #skills {
+    margin: 0 110px;
   }
 }
 
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
 }
 
 html, body {
@@ -40,6 +49,7 @@ ul {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,6 +89,125 @@ main {
 
 main #welcome-section {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #welcome-section div.person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+}
+
+main #welcome-section div.person img {
+  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+main #welcome-section div.person img.responsive-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+main #welcome-section div.person p {
+  font-family: 'Bad Script', cursive;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 35px;
+  line-height: normal;
+  line-height: 83%;
+}
+
+main #welcome-section div.person p:last-of-type {
+  -webkit-transform: rotate(-1.35deg);
+          transform: rotate(-1.35deg);
+}
+
+main #skills {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+}
+
+main #skills #skills-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #skills #skills-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 150px;
+  color: #bbb;
+}
+
+main #skills #skills-container div i {
+  font-size: 50px;
+}
+
+main #skills #skills-container div p {
+  margin: 30px 0 0 0;
 }
 
 main #projects {

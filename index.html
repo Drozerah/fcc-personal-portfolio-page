@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="src/css/main.css">
     <title>ffc-personal-porfolio-page</title>
 </head>
@@ -12,18 +13,86 @@
       <h1>My Portfolio</h1>
       <nav>
         <ul>
-          <li><a href="#Section_1">Home</a></li>
-          <li><a href="#Section_2">Projects</a></li>
-          <li><a href="#Section_3">Contact</a></li>
+          <li><a href="#Section_1">About Me</a></li>
+          <li><a href="#Section_2">Skills</a></li>
+          <li><a href="#Section_3">Projects</a></li>
+          <li><a href="#Section_4">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <span class="anchor" id="Section_1"></span><!-- anchor -->
       <section id="welcome-section">
-        <h1>Welcome:</h1>
+        <div class="person">
+          <img src="./src/img/avataaars.png" alt="avatar image" class="responsive-image">
+          <p class="whoiam">Hi! My name is John Doe</p>
+          <p>Welcome to my contact endpoint!</p>
+          <p>I'am a fullstack JavaScript  web developer</p>
+          <p>Do you need to create amazing things ?</p>
+        </div>
       </section>
       <span class="anchor" id="Section_2"></span><!-- anchor -->
+      <section id="skills">
+        <div id="skills-container">
+          <div>
+            <i class="devicon-nodejs-plain"></i>
+            <p>Node.js</p>
+          </div>
+          <div>
+            <i class="devicon-express-original"></i>
+            <p>Express.js</p>
+          </div>
+          <div>
+            <i class="devicon-mongodb-plain"></i>
+            <p>Mongodb</p>
+          </div>
+          <div>
+            <i class="devicon-mocha-plain"></i>
+            <p>Mocha</p>
+          </div>
+          <div>
+            <i class="devicon-vuejs-plain"></i>
+            <p>Vue.js</p>
+          </div>
+          <div>
+            <i class="devicon-javascript-plain"></i>
+            <p>Javascript</p>
+          </div>
+          <div>
+            <i class="devicon-css3-plain"></i>
+            <p>CSS3</p>
+          </div>
+          <div>
+            <i class="devicon-sass-original"></i>
+            <p>Sass</p>
+          </div>
+          <div>
+            <i class="devicon-html5-plain"></i>
+            <p>HTML5</p>
+          </div>
+          <div>
+            <i class="devicon-babel-plain"></i>
+            <p>Babel</p>
+          </div>
+          <div>
+            <i class="devicon-webpack-plain"></i>
+            <p>Webpack</p>
+          </div>
+          <div>
+            <i class="devicon-gulp-plain"></i>
+            <p>Gulp</p>
+          </div>
+          <div>
+            <i class="devicon-git-plain"></i>
+            <p>Git</p>
+          </div>
+          <div>
+            <i class="devicon-github-plain"></i>
+            <p>GitHub</p>
+          </div>
+        </div>
+      </section>
+      <span class="anchor" id="Section_3"></span><!-- anchor -->
       <section id="projects">
         <h1>Projects:</h1>
         <ul class="projects">
@@ -32,7 +101,7 @@
           </li>
         </ul>
       </section>
-      <span class="anchor" id="Section_3"></span><!-- anchor -->
+      <span class="anchor" id="Section_4"></span><!-- anchor -->
       <section id="contact">
         <h1>Contact:</h1>
         <ul id="contact">
