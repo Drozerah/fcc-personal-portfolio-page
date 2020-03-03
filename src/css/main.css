@@ -69,6 +69,14 @@ ul {
   background-color: rgba(255, 255, 255, 0.96);
 }
 
+#navbar *::-moz-selection {
+  background-color: transparent;
+}
+
+#navbar *::selection {
+  background-color: transparent;
+}
+
 #navbar h1 {
   font-size: inherit;
   font-weight: normal;
@@ -81,6 +89,16 @@ ul {
 
 #navbar nav ul, #navbar nav li {
   display: inline;
+}
+
+#navbar nav ul a, #navbar nav li a {
+  padding: 0 10px;
+  color: #23a14b;
+  text-decoration: none;
+}
+
+#navbar nav ul a:hover, #navbar nav li a:hover {
+  color: #86cc9d;
 }
 
 main {
@@ -146,12 +164,16 @@ main #welcome-section div.person p {
   margin: 10px 0;
   font-size: 35px;
   line-height: normal;
-  line-height: 83%;
+  line-height: 85%;
+}
+
+main #welcome-section div.person p .text-color {
+  color: #23a14b;
 }
 
 main #welcome-section div.person p:last-of-type {
-  -webkit-transform: rotate(-1.35deg);
-          transform: rotate(-1.35deg);
+  -webkit-transform: rotate(-1.8deg);
+          transform: rotate(-1.8deg);
 }
 
 main #skills {
@@ -205,11 +227,12 @@ main #skills #skills-container div {
           align-items: center;
   width: 150px;
   height: 150px;
-  color: #bbb;
+  color: #333;
 }
 
 main #skills #skills-container div i {
   font-size: 50px;
+  color: #4f9965;
 }
 
 main #skills #skills-container div p {
