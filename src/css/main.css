@@ -134,6 +134,12 @@ main #welcome-section div.person img.responsive-image {
   height: auto;
 }
 
+main #welcome-section div.person h1 {
+  font-family: 'Bad Script', cursive;
+  font-size: 35px;
+  font-weight: 500;
+}
+
 main #welcome-section div.person p {
   font-family: 'Bad Script', cursive;
   text-align: center;
