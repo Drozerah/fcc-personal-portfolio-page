@@ -66,6 +66,10 @@ ul{
           color:#86cc9d;
         }
       }
+      a.nav-link--on{
+        color: #c93305;
+        // color: #614335;
+      }
     }
   }
 }
@@ -138,7 +142,7 @@ main{
         height: 150px;
         color: #333;
         i{
-          font-size: 50px;
+          font-size: 60px;
           // color:#43664e;
           // color:#86cc9d;
           color:#4f9965;

@@ -101,6 +101,10 @@ ul {
   color: #86cc9d;
 }
 
+#navbar nav ul a.nav-link--on, #navbar nav li a.nav-link--on {
+  color: #c93305;
+}
+
 main {
   margin-top: 60px;
 }
@@ -231,7 +235,7 @@ main #skills #skills-container div {
 }
 
 main #skills #skills-container div i {
-  font-size: 50px;
+  font-size: 60px;
   color: #4f9965;
 }
 
