@@ -16,12 +16,6 @@ html, body{
   height: 100vh;
   margin: 0;
 }
-h1{
-  margin: 0;
-}
-ul{
-  margin: 0;
-}
 .anchor {
   display: block;
   height: $nav_height;       /* same as heading navbar height */
@@ -45,26 +39,33 @@ ul{
   *::selection{
     background-color: transparent;
   }
-
   h1{
+    width: 50%;
     font-size: inherit;
     font-weight: normal;
     margin-right: 20px;
+    text-align: right;
   }
   nav{
+    width: 50%;
     font-size: inherit;
-    ul, li{
-      display: inline;
-      a{
-        padding: 10px;
-        color: $nav_bar_link;
-        text-decoration: none;
-        &:hover{
-          color: $nav_bar_link_hover;
+    margin-left: 20px;
+    ul{
+      margin: 0;
+      padding: 0;
+      li{
+        display: inline;
+        a{
+          padding: 10px;
+          color: $nav_bar_link;
+          text-decoration: none;
+          &:hover{
+            color: $nav_bar_link_hover;
+          }
         }
-      }
-      a.nav-link--active{
-        color: $nav_bar_link_active;
+        a.nav-link--active{
+          color: $nav_bar_link_active;
+        }
       }
     }
   }
@@ -97,6 +98,7 @@ main{
         font-family: 'Bad Script', cursive;
         font-size: 35px;
         font-weight: 500;
+        margin-bottom: 0px;
       }
       p{
         font-family: 'Bad Script', cursive;
@@ -118,9 +120,12 @@ main{
     height: 100vh;
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     transform: translateY(-$nav_height);
+    h1{
+      margin-bottom: 40px;
+    }
     #skills-container{
       width: 100%;
       display: flex;
@@ -146,10 +151,31 @@ main{
     }
   }
   #projects{
-    height: 100vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:$nav_height;
+    h1{
+        text-align: center;
+        margin-bottom: 40px !important;
+      } 
   }
   #contact{
     height: 100vh;
+    h1{
+      text-align: center;
+      margin-top: 40px;
+    }
+    a{
+      padding: 10px;
+      color: $nav_bar_link;
+      text-decoration: none;
+      &:hover{
+        color: $nav_bar_link_hover;
+      }
+    }
   }
 }
 footer{

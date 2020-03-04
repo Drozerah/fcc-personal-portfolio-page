@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="src/css/devicon.min.css">
-    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" type="text/css" href="src/css/devicon.min.css">
+    <link rel="stylesheet" type="text/css" href="src/css/main.css">
+    <link rel="stylesheet" type="text/css" href="src/css/component.css" />
+    <script src="lib/modernizr.custom.js"></script>
     <title>ffc-personal-porfolio-page</title>
 </head>
 <body>
@@ -24,16 +26,17 @@
       <span class="anchor" id="About"></span><!-- anchor -->
       <section id="welcome-section">
         <div class="person">
-          <img src="./src/img/avataaars.png" alt="avatar image" class="responsive-image">
-          <h1>Hi! My name is John Doe</h1>
+          <img src="./src/img/avatar.png" alt="avatar image" class="responsive-image">
+          <h1>Hi! My name is John Doe.</h1>
           <p>Welcome to my contact endpoint!</p>
-          <p>I'Am a <span class="text-color">JavaScript fullstack web developer</span></p>
+          <p>I'Am a <span class="text-color">JavaScript fullstack web developer.</span></p>
           <!-- <p>Do you need to create amazing things ?</p> -->
           <p>Want you create ?</p>
         </div>
       </section>
       <span class="anchor" id="Skills"></span><!-- anchor -->
       <section id="skills">
+        <h1>My Skills</h1>
         <div id="skills-container">
           <div>
             <i class="devicon-nodejs-plain"></i>
@@ -95,16 +98,57 @@
       </section>
       <span class="anchor" id="Projects"></span><!-- anchor -->
       <section id="projects">
-        <h1>Projects:</h1>
-        <ul class="projects">
-          <li>
-            <div class="project-tile"><a href="#">Project link</a></div>
-          </li>
-        </ul>
+        <h1>My Projects</h1>
+        <div id="projects-container">
+          <!-- thumbnailExpanding -->
+          <ul id="og-grid" class="og-grid">
+            <li class="project-tile">
+              <a href="#Projects" data-largesrc="/src/img/500.png" data-title="Project Title" data-description="Project description...">
+                <img src="/src/img/thumbs/250.png" alt="img01"/>
+              </a>
+            </li>
+            <li class="project-tile">
+              <a href="#Projects" data-largesrc="/src/img/500.png" data-title="Project Title" data-description="Project description...">
+                <img src="/src/img/thumbs/250.png" alt="img01"/>
+              </a>
+            </li>
+            <li class="project-tile">
+              <a href="#Projects" data-largesrc="/src/img/500.png" data-title="Project Title" data-description="Project description...">
+                <img src="/src/img/thumbs/250.png" alt="img01"/>
+              </a>
+            </li>
+            <li class="project-tile">
+              <a href="#Projects" data-largesrc="/src/img/500.png" data-title="Project Title" data-description="Project description...">
+                <img src="/src/img/thumbs/250.png" alt="img01"/>
+              </a>
+            </li>
+            <li class="project-tile">
+              <a href="#Projects" data-largesrc="/src/img/500.png" data-title="Project Title" data-description="Project description...">
+                <img src="/src/img/thumbs/250.png" alt="img01"/>
+              </a>
+            </li>
+            <li class="project-tile">
+              <a href="#Projects" data-largesrc="/src/img/500.png" data-title="Project Title" data-description="Project description...">
+                <img src="/src/img/thumbs/250.png" alt="img01"/>
+              </a>
+            </li>
+            <li class="project-tile">
+              <a href="#Projects" data-largesrc="/src/img/500.png" data-title="Project Title" data-description="Project description...">
+                <img src="/src/img/thumbs/250.png" alt="img01"/>
+              </a>
+            </li>
+            <li class="project-tile">
+              <a href="#Projects" data-largesrc="/src/img/500.png" data-title="Project Title" data-description="Project description...">
+                <img src="/src/img/thumbs/250.png" alt="img01"/>
+              </a>
+            </li>
+          </ul>
+          <!-- End thumbnailExpanding -->
+        </div>
       </section>
       <span class="anchor" id="Contact"></span><!-- anchor -->
       <section id="contact">
-        <h1>Contact:</h1>
+        <h1>Contact</h1>
         <ul class="contact">
           <li><a href="https://github.com/Drozerah" id="profile-link" target="_blank" rel="noreferrer">GitHub</a></li>
         </ul>
@@ -114,5 +158,12 @@
       <div>Coded by <a href="https://github.com/Drozerah" id="profile-link" target="_blank" rel="noreferrer">Drozerah</a> </div>
     </footer>
     <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="lib/grid.js"></script>
+		<script>
+			$( document ).ready(function() {
+				Grid.init();
+			});
+		</script>
 </body>
 </html>

@@ -27,14 +27,6 @@ html, body {
   margin: 0;
 }
 
-h1 {
-  margin: 0;
-}
-
-ul {
-  margin: 0;
-}
-
 .anchor {
   display: block;
   height: 60px;
@@ -78,30 +70,39 @@ ul {
 }
 
 #navbar h1 {
+  width: 50%;
   font-size: inherit;
   font-weight: normal;
   margin-right: 20px;
+  text-align: right;
 }
 
 #navbar nav {
+  width: 50%;
   font-size: inherit;
+  margin-left: 20px;
 }
 
-#navbar nav ul, #navbar nav li {
+#navbar nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar nav ul li {
   display: inline;
 }
 
-#navbar nav ul a, #navbar nav li a {
+#navbar nav ul li a {
   padding: 10px;
   color: #23a14b;
   text-decoration: none;
 }
 
-#navbar nav ul a:hover, #navbar nav li a:hover {
+#navbar nav ul li a:hover {
   color: #86cc9d;
 }
 
-#navbar nav ul a.nav-link--active, #navbar nav li a.nav-link--active {
+#navbar nav ul li a.nav-link--active {
   color: #c93305;
 }
 
@@ -160,6 +161,7 @@ main #welcome-section div.person h1 {
   font-family: 'Bad Script', cursive;
   font-size: 35px;
   font-weight: 500;
+  margin-bottom: 0px;
 }
 
 main #welcome-section div.person p {
@@ -188,15 +190,19 @@ main #skills {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-transform: translateY(-60px);
           transform: translateY(-60px);
+}
+
+main #skills h1 {
+  margin-bottom: 40px;
 }
 
 main #skills #skills-container {
@@ -244,11 +250,45 @@ main #skills #skills-container div p {
 }
 
 main #projects {
-  height: 100vh;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+}
+
+main #projects h1 {
+  text-align: center;
+  margin-bottom: 40px !important;
 }
 
 main #contact {
   height: 100vh;
+}
+
+main #contact h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+main #contact a {
+  padding: 10px;
+  color: #23a14b;
+  text-decoration: none;
+}
+
+main #contact a:hover {
+  color: #86cc9d;
 }
 
 footer {
