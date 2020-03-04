@@ -5,6 +5,6 @@
 #!build/index.js
 
 # Ignore dist folder with all files inside
-dist/*
+lib/*
 
 # Ignore files
