@@ -2,7 +2,7 @@
 /*
 * MEDIA QUERIES
 */
-@import url("https://fonts.googleapis.com/css?family=Bad+Script|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Bad+Script|Raleway&display=swap");
 @media screen and (min-width: 993px) {
   main, footer {
     margin: 0 40px;
@@ -38,9 +38,9 @@ ul {
 .anchor {
   display: block;
   height: 60px;
-  /* same height as header */
+  /* same as heading navbar height */
   margin-top: -60px;
-  /* same height as header */
+  /* same as heading navbar height but negative */
   visibility: hidden;
 }
 

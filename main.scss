@@ -1,6 +1,6 @@
 @import './scss/colors';
 @import './scss/responsive';
-@import url('https://fonts.googleapis.com/css?family=Bad+Script|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Raleway&display=swap');
 
 
 $nav_height: 60px;
@@ -24,8 +24,8 @@ ul{
 }
 .anchor {
   display: block;
-  height: $nav_height;       /* same height as header */
-  margin-top: -$nav_height;  /* same height as header */
+  height: $nav_height;       /* same as heading navbar height */
+  margin-top: -$nav_height;  /* same as heading navbar height but negative */
   visibility: hidden;
 }
 #navbar{
