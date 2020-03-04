@@ -101,7 +101,7 @@ ul {
   color: #86cc9d;
 }
 
-#navbar nav ul a.nav-link--on, #navbar nav li a.nav-link--on {
+#navbar nav ul a.nav-link--active, #navbar nav li a.nav-link--active {
   color: #c93305;
 }
 

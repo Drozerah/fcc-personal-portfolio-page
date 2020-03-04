@@ -1,5 +1,4 @@
 (() => {
-  console.log('JS is loaded!')
   /**
     * Append FCC test script
     *
@@ -16,46 +15,55 @@
   }
   ffcTest()
 
-  const currentNavLinkClass = (e) => {
+  /**
+   * Add or remove class off nav-link--active to nav bar links according to context and events
+   *
+   * When the page is loaded :
+   *  - if the url do not contain hash, we add default active link to first link (default)
+   *  - if the url contains a hash, we the off nav-link--active to the matching nav link
+   * When a navlink is clicked :
+   *  - remove class of nav-link--active from existing navlink
+   *  - add class of nav-link--active to the clicked navlink
+   */
+  const manageActiveLink = (e) => {
     /**
-     * Remove existing class existing name of nav-link--on
+     * Remove existing active link CSS class
      */
-    const removeCurrentNavLink = () => {
-      const isCurrentNavLink = document.querySelector('.nav-link--on') || null
-      isCurrentNavLink && isCurrentNavLink.classList.remove('nav-link--on')
+    const removeActiveLink = () => {
+      const isCurrentNavLink = document.querySelector('.nav-link--active') || null
+      isCurrentNavLink && isCurrentNavLink.classList.remove('nav-link--active')
     }
     /**
-     * Add CSS class name of nav-link--on to element
+     * Add CSS class name of nav-link--active to element
      */
-    const addClass = element => element.classList.add('nav-link--on')
+    const addActiveLink = element => element.classList.add('nav-link--active')
     /**
      * Working with load event
      */
     if (e.type === 'load') {
-      removeCurrentNavLink()
+      removeActiveLink()
       // Ref all nav links
       const navlinks = Array.from(document.querySelectorAll('.nav-link'))
       // Ref current hash if any
       const isCurrentHash = e.target.location.hash || null
       if (!isCurrentHash) {
-        // Add class of nav-link--on to first nav-link element
-        addClass(navlinks[0])
+        // Add class of nav-link--active to first nav-link element
+        addActiveLink(navlinks[0])
       } else {
         // Find nav link element with hash equality to location.hash
         const currentNavLink = navlinks.find(link => link.hash === isCurrentHash)
-        console.log() // !DEBUG
-        // Add class of nav-link--on to matching navlink hash
-        addClass(currentNavLink)
+        // Add class of nav-link--active to matching navlink hash
+        addActiveLink(currentNavLink)
       }
     }
     /**
-     * Working with navigation click event
+     * Replace active link according to click event
      */
     if (e.type === 'click' && e.target.hash) {
-      removeCurrentNavLink()
-      addClass(e.target)
+      removeActiveLink()
+      addActiveLink(e.target)
     }
   }
-  window.addEventListener('load', currentNavLinkClass)
-  document.querySelector('#nav-links').addEventListener('click', currentNavLinkClass)
+  window.addEventListener('load', manageActiveLink)
+  document.querySelector('#nav-links').addEventListener('click', manageActiveLink)
 })()
