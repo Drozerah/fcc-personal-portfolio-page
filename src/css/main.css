@@ -2,7 +2,7 @@
 /*
 * MEDIA QUERIES
 */
-@import url("https://fonts.googleapis.com/css?family=Bad+Script|Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bad+Script|Raleway");
 @media screen and (min-width: 993px) {
   main, footer {
     margin: 0 40px;
@@ -92,7 +92,7 @@ ul {
 }
 
 #navbar nav ul a, #navbar nav li a {
-  padding: 0 10px;
+  padding: 10px;
   color: #23a14b;
   text-decoration: none;
 }
@@ -236,7 +236,7 @@ main #skills #skills-container div {
 
 main #skills #skills-container div i {
   font-size: 60px;
-  color: #4f9965;
+  color: #23a14b;
 }
 
 main #skills #skills-container div p {

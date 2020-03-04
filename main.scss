@@ -1,8 +1,6 @@
 @import './scss/colors';
 @import './scss/responsive';
-//@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
-// @import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Bad+Script|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Raleway');
 
 
 $nav_height: 60px;
@@ -42,8 +40,8 @@ ul{
   justify-content: center;
   font-size: 20px;
   height: $nav_height;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid $nav_bar_border_bottom;
+  background-color: $nav_bar_bg;
   *::selection{
     background-color: transparent;
   }
@@ -58,17 +56,15 @@ ul{
     ul, li{
       display: inline;
       a{
-        padding: 0 10px;
-        // color:#43664e;
-        color:#23a14b;
+        padding: 10px;
+        color: $nav_bar_link;
         text-decoration: none;
         &:hover{
-          color:#86cc9d;
+          color: $nav_bar_link_hover;
         }
       }
       a.nav-link--on{
-        color: #c93305;
-        // color: #614335;
+        color: $nav_bar_link_active;
       }
     }
   }
@@ -103,8 +99,6 @@ main{
         font-weight: 500;
       }
       p{
-        // font-family: 'Dancing Script', cursive;
-        // font-family: 'Caveat', cursive;
         font-family: 'Bad Script', cursive;
         text-align: center;
         margin: 10px 0;
@@ -112,7 +106,7 @@ main{
         line-height: normal;
         line-height: 85%;
         .text-color{
-          color:#23a14b;
+          color: $green;
         }
       }
       p:last-of-type{
@@ -140,12 +134,10 @@ main{
         align-items: center;
         width: 150px;
         height: 150px;
-        color: #333;
+        color: $black;
         i{
           font-size: 60px;
-          // color:#43664e;
-          // color:#86cc9d;
-          color:#4f9965;
+          color: $green;
         }
         p{
           margin: 30px 0 0 0;

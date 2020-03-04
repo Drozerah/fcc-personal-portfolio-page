@@ -1,2 +1,13 @@
-$gray: #bbb;
-$light_gray: #E7E7E7;
+// primary colors
+$gray:#bbb;
+$light_gray:#E7E7E7;
+$green:#23a14b;
+$light_green:#86cc9d;
+$orange:#c93305;
+$black:#333;
+// navbar
+$nav_bar_border_bottom:rgba(0, 0, 0, 0.1);
+$nav_bar_bg:rgba(255, 255, 255, 0.96);
+$nav_bar_link: $green;
+$nav_bar_link_hover: $light_green;
+$nav_bar_link_active: $orange;
