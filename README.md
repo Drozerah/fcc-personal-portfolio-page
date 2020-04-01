@@ -2,9 +2,11 @@
 
 > Work in progress !
 
-### #TODO
+## Netlify Deployment
 
-* write a better README.md 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7ae4f581-ae28-42be-af22-48feedf3be51/deploy-status)](https://app.netlify.com/sites/fcc-personal-portfolio-page-demo/deploys)
+
+- [Portfolio Page Demo](https://fcc-personal-portfolio-page-demo.netlify.com/)
 
 ## Author
 
